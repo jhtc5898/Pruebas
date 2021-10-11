@@ -1,5 +1,6 @@
 # Punto de entrada para la aplicación.
 #from . import app    # Llamado al comando 'flask'.
+#Cambio para ver si atualiza
 from __init__ import app
 from flask import Flask, render_template , request
 
