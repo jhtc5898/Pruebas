@@ -12,8 +12,11 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # Install pip requirements
-COPY RpaUps/requirements.txt .
-RUN python -m pip install -r requirements.txt
+RUN python -m pip install flask==1.1.2
+RUN python -m pip install gunicorn==20.0.4
+RUN python -m pip install selenium==3.141.0
+
+
 
 WORKDIR /app
 COPY . /app
