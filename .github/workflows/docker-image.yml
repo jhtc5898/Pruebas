@@ -16,4 +16,4 @@ jobs:
       run: docker build . --file RpaUps/Dockerfile --tag johnecu15/pruebarpa:$(date +%s)
       
     - name: Docker Push
-      run: docker push johnecu15/pruebarpa
+      run: docker push johnecu15/pruebarpa:$(date +%s)
