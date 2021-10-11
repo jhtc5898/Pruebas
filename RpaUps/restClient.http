@@ -1,0 +1,37 @@
+
+POST http://127.0.0.1:5000/facebook HTTP/1.1
+content-type: application/json
+
+{ 
+ "fac": 
+    {
+      "email": "upspruebasrpa@gmail.com",
+      "contrasena": "#zxcvbnm",
+      "post":"Pruebas Grupos Docker ",
+      "share":
+      {
+          "0":"https://mbasic.facebook.com/Informate-Ups-110322654689275",
+          "1":"https://mbasic.facebook.com/Pruebas-Informate-103640072035315"
+       },
+      "imagenes":"0"
+    }
+}
+###
+POST http://127.0.0.1:5000/twitter HTTP/1.1
+content-type: application/json
+
+{ 
+ "twi": 
+    {
+      "email": "@UpsRpa",
+      "contrasena": "#zxcvbnm",
+      "post":"Subir Docker Hub FInal asdasdasd",
+      "share":
+      {
+         "0":"@JhTc_1"
+      },
+     "imagenes":"0"
+    }
+ }
+
+###

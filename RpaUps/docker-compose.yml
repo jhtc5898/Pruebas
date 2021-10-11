@@ -1,0 +1,21 @@
+version: "3.9"
+    
+services:
+  selenium:
+    image: selenium/standalone-firefox:latest
+    shm_size: 2gb
+    restart: always
+    ports: 
+      - "4444:4444"
+
+    
+  server:
+    depends_on:
+      - selenium
+    image: rpaups:latest
+    ports:
+      - "5000:5000"
+    restart: always
+    links:
+      - selenium
+      
